@@ -3,6 +3,7 @@
 namespace Modules\Admin\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\RequestCategory;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 
@@ -21,8 +22,8 @@ class AdminCategoryController extends Controller
         return view('admin::category.create');
     }
 
-    public function store(Request $request){
-        dd($request->all());
+    public function store(RequestCategory $requestCategory){
+        dd($requestCategory->all());
     }
 
 }
