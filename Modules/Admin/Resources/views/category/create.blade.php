@@ -15,6 +15,26 @@
                 @endif
 
                 <div class="form-group">
+                  <label for="name" class="h5">Meta title</label>
+                <input type="text" class="form-control" placeholder="Meta title" name="c_title_seo" value="{{ old('c_title_seo') }}">
+                </div>
+                {{-- @if ($errors->has('name'))
+                  <div class="alert alert-danger" role="alert">
+                    {{$errors->first('c_title_seo')}}
+                  </div>
+                @endif --}}
+                
+                <div class="form-group">
+                  <label for="name" class="h5">Meta Dexcription</label>
+                <input type="text" class="form-control" placeholder="Meta Description" name="c_description_seo" value="{{ old('c_description_seo') }}">
+                </div>
+                {{-- @if ($errors->has('name'))
+                  <div class="alert alert-danger" role="alert">
+                    {{$errors->first('name')}}
+                  </div>
+                @endif --}}
+
+                <div class="form-group">
                   <label for="name" class="h5">Icon</label>
                   <input type="text" class="form-control" placeholder="fa fa-home" name="icon">
                 </div>
