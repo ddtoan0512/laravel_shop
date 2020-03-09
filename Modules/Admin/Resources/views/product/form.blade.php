@@ -26,6 +26,11 @@
                 <label for="pro_content" class="h5">Nội dung</label>
                 <textarea name="pro_content" class="form-control" id="" cols="30" rows="3" placeholder="Nội dung"></textarea>
             </div>
+            @if ($errors->has('pro_content'))
+                <div class="alert alert-danger" role="alert">
+                {{$errors->first('pro_content')}}
+                </div>
+            @endif
 
             <div class="form-group">
                 <label for="pro_title_seo" class="h5">Meta Title</label>
@@ -44,6 +49,11 @@
             <label for="pro_category_id" class="h5">Loại sản phẩm</label>
             <select name="pro_category_id" id="pro_category_id" class="form-control">
                 <option value="">--Chọn loại sản phẩm--</option>
+                @if(isset($categories))
+                    @foreach($categories as $category)
+                        <option value="{{$category->id}}">{{$category->c_name}}</option>
+                    @endforeach
+                @endif
             </select>
         </div>
         @if ($errors->has('pro_category_id'))

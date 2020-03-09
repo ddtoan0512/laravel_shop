@@ -40,4 +40,6 @@ class RequestProduct extends FormRequest
             'pro_content.required' => "Nội dung sản phẩm không được để trống",
         ];
     }    
+
+    
 }
