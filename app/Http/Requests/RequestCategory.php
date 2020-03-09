@@ -4,6 +4,9 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+/**
+ * @property mixed icon
+ */
 class RequestCategory extends FormRequest
 {
     /**
@@ -21,17 +24,20 @@ class RequestCategory extends FormRequest
      *
      * @return array
      */
+
+    
     public function rules()
     {
         return [
-            'name' => 'required',
+            'name' => 'required|unique:categories,c_name,'.$this->id,
             'icon' => 'required'
         ];
     }
-
+    
     public function messages(){
         return [
             'name.required' => "Tên danh mục không được để trống",
+            'name.unique' => "Tên danh mục đã tồn tại",
             'icon.required' => "Icon không được để trống"
         ];
     }    
