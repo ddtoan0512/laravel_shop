@@ -13,12 +13,29 @@ class AdminProductController extends Controller
 {
     public function index()
     {
-        return view('admin::product.index');
+        $products = Product::paginate(10);
+
+        $viewData = [
+            'products' => $products
+        ];
+
+        return view('admin::product.index', $viewData);
     }
     
     public function create(){
         $categories = $this->getCategories();
         return view('admin::product.create', compact('categories'));
+    }
+
+    public function edit($id){
+        $product = Product::find($id);
+        $categories = $this->getCategories();
+        return view('admin::product.update', compact('product', 'categories'));
+    }
+
+    public function update(RequestProduct $request, $id){
+        $this->insertOrUpdate($request, $id);
+        return redirect()->back();
     }
 
     public function store(RequestProduct $request){
@@ -40,6 +57,7 @@ class AdminProductController extends Controller
         $product->pro_category_id = $request->pro_category_id;
         $product->pro_price = $request->pro_price;
         $product->pro_sale = $request->pro_sale;
+        $product->pro_content = $request->pro_content;
         $product->pro_description = $request->pro_description;
         $product->pro_title_seo = $request->pro_title_seo ? $request->pro_title_seo : '';
         $product->pro_description_seo = $request->pro_description_seo ? $request->pro_description_seo : '';

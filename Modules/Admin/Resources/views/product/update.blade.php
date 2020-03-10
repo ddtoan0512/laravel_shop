@@ -1,9 +1,6 @@
 @extends('admin::layouts.master')
 @section('content')
-<div class="container-fluid">
-  <div class="pt-3">
-      <div class="row">
+<div class="">
         @include('admin::product.form')
-      </div>
-  </div>
 </div>
+@endsection

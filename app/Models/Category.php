@@ -17,12 +17,12 @@ class Category extends Model
     private $status = [
         1 => [
             'name' => 'Public',
-            'class' => ''
+            'class' => 'badge-pill badge-success'
         ],
         0 => [
             'name' => 'Private',
-            'class' => ''
-        ],
+            'class' => 'badge-pill badge-danger'
+        ]
     ];
 
     public function getStatus (){

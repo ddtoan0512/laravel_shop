@@ -14,7 +14,7 @@
             
             <div class="form-group">
                 <label for="pro_description" class="h5">Mô tả</label>
-                <textarea name="pro_description" class="form-control" id="" cols="30" rows="3" placeholder="Mô tả sản phẩm"></textarea>
+            <textarea name="pro_description" class="form-control" id="" cols="30" rows="3" placeholder="Mô tả sản phẩm">{{ old('pro_description', isset($product->pro_description) ? $product->pro_description : '') }}</textarea>
             </div>
             @if ($errors->has('pro_description'))
                 <div class="alert alert-danger" role="alert">
@@ -24,7 +24,7 @@
             
             <div class="form-group">
                 <label for="pro_content" class="h5">Nội dung</label>
-                <textarea name="pro_content" class="form-control" id="" cols="30" rows="3" placeholder="Nội dung"></textarea>
+                <textarea name="pro_content" class="form-control" id="" cols="30" rows="3" placeholder="Nội dung">{{ old('pro_content', isset($product->pro_content) ? $product->pro_content : '') }}</textarea>
             </div>
             @if ($errors->has('pro_content'))
                 <div class="alert alert-danger" role="alert">
@@ -51,7 +51,7 @@
                 <option value="">--Chọn loại sản phẩm--</option>
                 @if(isset($categories))
                     @foreach($categories as $category)
-                        <option value="{{$category->id}}">{{$category->c_name}}</option>
+            <option value="{{$category->id}}" {{old('pro_category_id', (isset($product->pro_category_id) ? $product->pro_category_id : '') == $category->id ? "selected" : '') }}>{{$category->c_name}}</option>
                     @endforeach
                 @endif
             </select>
@@ -65,7 +65,7 @@
 
         <div class="form-group">
             <label for="pro_price" class="h5">Giá sản phẩm</label>
-            <input type="number" placeholder="Giá sản phẩm" name="pro_price" class="form-control">
+            <input type="number" placeholder="Giá sản phẩm"  name="pro_price" value="{{ old('pro_price', isset($product->pro_price) ? $product->pro_price : '') }}" class="form-control">
         </div>
         @if ($errors->has('pro_price'))
             <div class="alert alert-danger" role="alert">
@@ -75,7 +75,7 @@
 
         <div class="form-group">
             <label for="pro_sale" class="h5">% khuyến mãi</label>
-            <input type="number" placeholder="%giảm giá" name="pro_sale" class="form-control" value="0">
+            <input type="number" placeholder="%giảm giá" name="pro_sale" class="form-control" value="{{ old('pro_sale', isset($product->pro_sale) ? $product->pro_sale : '0') }}" >
         </div>
 
         <div class="form-group">
