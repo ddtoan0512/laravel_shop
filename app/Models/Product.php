@@ -13,6 +13,8 @@ class Product extends Model
     const HOT_ON = 1;
     const HOT_OFF = 0;
 
+    protected $guarded = [];
+
     protected $status = [
         1 => [
             'name' => 'Public',
