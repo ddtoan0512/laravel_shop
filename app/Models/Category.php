@@ -25,7 +25,8 @@ class Category extends Model
         ]
     ];
 
-    public function getStatus (){
-        return array_get($this->status, $this->c_active,'[N/A]');
+    public function getStatus()
+    {
+        return array_get($this->status, $this->c_active, '[N/A]');
     }
 }

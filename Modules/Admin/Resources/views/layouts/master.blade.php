@@ -13,6 +13,8 @@
 
     <!-- Bootstrap core CSS -->
   <link href="{{asset('theme_admin/css/bootstrap.min.css')}}" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+  <script src="https://kit.fontawesome.com/1afc1c7a2e.js" crossorigin="anonymous"></script>
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -61,19 +63,19 @@
       <div class="sidebar-sticky">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" href="#">
+            <a class="nav-link {{ \Request::route()->getName() == 'admin.home' ? 'active' : '' }}" href="{{ route('admin.home') }}" href="#">
               <span data-feather="home"></span>
               Trang tổng quan <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-          <a class="nav-link" href="{{ route('admin.get.list.category') }}">
+          <a class="nav-link {{ \Request::route()->getName() == 'admin.get.list.category' ? 'active' : '' }}" href="{{ route('admin.get.list.category') }}">
               <span data-feather="file"></span>
               Danh mục
             </a>
           </li>
-          <li class="nav-item">
-          <a class="nav-link" href="{{ route('admin.get.list.product')}}">
+          <li class="nav-item ">
+          <a class="nav-link {{ \Request::route()->getName() == 'admin.get.list.product' ? 'active' : '' }}" href="{{ route('admin.get.list.product')}}">
               <span data-feather="shopping-cart"></span>
               Sản phẩm
             </a>
