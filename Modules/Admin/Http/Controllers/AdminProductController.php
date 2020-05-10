@@ -15,8 +15,12 @@ class AdminProductController extends Controller
     {
         $products = Product::with('category:id,c_name');
 
-        if ($request->name) $products->where('pro_name', 'like', '%' . $request->name . '%');
-        if ($request->cate) $products->where('pro_category_id', $request->cate);
+        if ($request->name) {
+            $products->where('pro_name', 'like', '%' . $request->name . '%');
+        }
+        if ($request->cate) {
+            $products->where('pro_category_id', $request->cate);
+        }
 
         $products = $products->orderByDesc('id')->paginate(10);
 
@@ -73,6 +77,14 @@ class AdminProductController extends Controller
         $product->pro_description = $request->pro_description;
         $product->pro_title_seo = $request->pro_title_seo ? $request->pro_title_seo : '';
         $product->pro_description_seo = $request->pro_description_seo ? $request->pro_description_seo : '';
+
+        if ($request->hasFile('avatar')) {
+            $file = upload_image('avatar');
+            
+            if (isset($file['name'])) {
+                $product->pro_avatar = $file['name'];
+            }
+        }
 
         $product->save();
     }
