@@ -38,22 +38,25 @@ class AdminCategoryController extends Controller
         return redirect()->back();
     }
 
-    public function edit($id){
+    public function edit($id)
+    {
         $category = Category::find($id);
         return view('admin::category.update', compact('category'));
     }
     
-    public function update(RequestCategory $requestCategory, $id){
+    public function update(RequestCategory $requestCategory, $id)
+    {
         $this->insertOrUpdate($requestCategory, $id);
         return redirect()->back();
     }
 
-    public function insertOrUpdate($requestCategory, $id = ''){
+    public function insertOrUpdate($requestCategory, $id = '')
+    {
         $code = 1;
-        try{         
+        try {
             $category = new Category();
 
-            if($id){
+            if ($id) {
                 $category = Category::find($id);
             }
 
@@ -63,18 +66,19 @@ class AdminCategoryController extends Controller
             $category->c_title_seo = $requestCategory->c_title_seo ? $requestCategory->c_title_seo : $requestCategory->name;
             $category->c_description_seo = $requestCategory->c_description_seo;
             $category->save();
-        }catch(Exception $e){
+        } catch (Exception $e) {
             $code = 0;
             Log::error("[Error insertOrUpdate Category]".$e->getMessage());
         }
         return $code;
     }
 
-    public function action($action, $id){
-        if($action){
+    public function action($action, $id)
+    {
+        if ($action) {
             $category = Category::find($id);
-            switch($action){
-                case 'delete': 
+            switch ($action) {
+                case 'delete':
                     $category->delete();
                 break;
             }
