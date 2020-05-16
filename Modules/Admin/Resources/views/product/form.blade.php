@@ -26,7 +26,7 @@
 
             <div class="form-group">
                 <label for="pro_content" class="h5">Nội dung</label>
-                <textarea name="pro_content" class="form-control" id="" cols="30" rows="3"
+                <textarea name="pro_content" class="form-control" id="pro_content" cols="30" rows="3"
                     placeholder="Nội dung">{{ old('pro_content', isset($product->pro_content) ? $product->pro_content : '') }}</textarea>
             </div>
             @if ($errors->has('pro_content'))
@@ -89,8 +89,12 @@
             </div>
 
             <div class="form-group">
+                <img src="{{ asset('images/no-image.jpg') }}" id="out_img" style="height: 400px; width: 100%;">
+            </div>
+
+            <div class="form-group">
                 <label for="name" class="h5">Avatar</label>
-                <input type="file" name="avatar" class="form-control" />
+                <input type="file" id="input_img" name="avatar" class="form-control" />
             </div>
 
             <div class="form-group form-check">
@@ -101,3 +105,10 @@
         </div>
     </div>
 </form>
+
+@section('script')
+<script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+<script>
+    CKEDITOR.replace('pro_content');
+</script>
+@stop

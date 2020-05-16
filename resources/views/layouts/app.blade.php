@@ -3128,12 +3128,14 @@
         <a href="https://www.thegioididong.com/#top" title="Về Đầu Trang"><span></span></a>
     </p>
 
-    <script async=""
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    {{-- <script async=""
         src="./Thegioididong.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/analytics.js.tải xuống">
     </script>
     <script defer="defer" async="async"
         src="./Thegioididong.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/home.min.v202005080820.js.tải xuống">
-    </script>
+    </script> --}}
     <script>
         //<!--#region TGDD TRACKING -->
         var mysessionid = 'tsb2xdlkygugtaqoxci03w2k';
@@ -3143,6 +3145,8 @@
         var rooturl = '.thegioididong.com';
         var isMobile = false;
     </script>
+    @yield('script')
+
     <!--#region CrazyEgg -->
     <script type="text/javascript">
         setTimeout(function () {

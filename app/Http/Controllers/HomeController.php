@@ -18,6 +18,7 @@ class HomeController extends FrontendController
             'pro_active' => Product::STATUS_PUBLIC
         ])->limit(5)->get();
 
+        // dd($productHot);
         $viewData = [
             'productHot' => $productHot
         ];

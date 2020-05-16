@@ -11,7 +11,8 @@
     <nav>
       @if( isset($categories))
       @foreach($categories as $category)
-      <a href="https://www.thegioididong.com/dtdd" class="mobile" title="{{ $category->c_name }}">
+      <a href="{{ route('get.list.product', [$category->c_slug, $category->id]) }}" class="mobile"
+        title="{{ $category->c_name }}">
         <i class="icontgdd-mobile"></i>{{ $category->c_name }}
       </a>
       @endforeach
