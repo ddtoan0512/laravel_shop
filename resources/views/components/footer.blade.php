@@ -1,93 +1,209 @@
 <footer>
-  <div class="rowfoot1">
-    <ul class="colfoot">
-      <li><a href="https://www.thegioididong.com/tra-gop" title="Hướng dẫn mua trả góp">Tìm hiểu về mua trả
-          góp</a></li>
-      <li><a href="https://www.thegioididong.com/bao-hanh" title="Tìm trung tâm bảo hành">Chính sách bảo
-          hành</a></li>
-      <li><a href="https://www.thegioididong.com/chinh-sach-bao-hanh-san-pham" title="Chính sách đổi trả">Chính sách đổi
-          trả</a></li>
-      <li><a href="https://www.thegioididong.com/giao-hang" title="Giao hàng &amp; Thanh toán">Giao hàng &amp;
-          Thanh toán</a></li>
-      <li class="showmore"><a href="javascript:ShowMoreFooterSupportLink()" title="Xem thêm">Xem thêm</a></li>
-      <li class="hidden"><a href="https://www.thegioididong.com/huong-dan-mua-hang" title="Hướng dẫn mua online">Hướng
-          dẫn mua online</a></li>
-      <li class="hidden"><a href="https://www.thegioididong.com/b2b" title="Mua hàng doanh nghiệp">Bán hàng
-          doanh nghiệp</a></li>
-      <li class="hidden"><a href="https://www.thegioididong.com/phieu-mua-hang" title="Phiếu mua hàng">Phiếu
-          mua hàng</a></li>
-      <li class="hidden"><a href="https://hddt.thegioididong.com/" target="_blank" title="In hóa đơn điện tử"
-          rel="nofollow noopener">In hóa đơn điện tử</a></li>
-      <li class="hidden"><a href="https://www.thegioididong.com/tos" title="Quy chế hoạt động">Quy chế hoạt
-          động</a></li>
-      <li class="hidden"><a href="https://www.thegioididong.com/noi-quy-cua-hang" title="Nội quy cửa hàng">Nội
-          quy cửa hàng</a></li>
-      <li class="hidden"><a href="https://www.thegioididong.com/chat-luong-phuc-vu" title="Chất lượng phục vụ">Chất
-          lượng phục vụ</a></li>
-      <li class="hidden"><a href="https://www.thegioididong.com/trao-thuong" title="Thông tin trao thưởng">Thông tin
-          trao thưởng</a></li>
-      <li class="hidden"><a href="https://www.thegioididong.com/chinh-sach-khui-hop-apple"
-          title="Chính sách khui hộp sản phẩm Apple">Chính sách khui hộp sản phẩm Apple</a></li>
-    </ul>
-    <ul class="colfoot">
-      <li><a href="http://mwg.vn/" target="_blank" title="Giới thiệu công ty (mwg.vn)" rel="noopener">Giới
-          thiệu công ty <span>(mwg.vn)</span></a></li>
-      <li><a href="https://vieclam.thegioididong.com/" target="_blank" title="Tuyển dụng" rel="noopener">Tuyển
-          dụng</a></li>
-      <li><a href="https://www.thegioididong.com/lien-he" title="Gửi góp ý, khiếu nại">Gửi góp ý, khiếu
-          nại</a></li>
-      <li><a href="https://www.thegioididong.com/he-thong-sieu-thi-the-gioi-di-dong"
-          title="Tìm siêu thị (2.023 shop)">Tìm siêu thị <span>(2.023 shop)</span></a></li>
-      <li>
-        <a class="viewmb" rel="nofollow" href="https://www.thegioididong.com/?sclient=mobile" title="Xem bản mobile">Xem
-          bản mobile</a>
-      </li>
-    </ul>
-    <ul class="colfoot">
-      <li>
-
-        <p>Gọi mua hàng <a href="tel:18001060">1800.1060</a> (7:30 - 22:00)</p>
-        <p>Gọi khiếu nại &nbsp; <a href="tel:18001062">1800.1062</a> (8:00 - 21:30)</p>
-        <p>Gọi bảo hành &nbsp; <a href="tel:18001064">1800.1064</a> (8:00 - 21:00)</p>
-        <p>Kỹ thuật &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="tel:18001763">1800.1763</a> (7:30 - 22:00)
-        </p>
-        <a target="_blank" rel="nofollow noopener" class="bct"
-          href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=20098" aria-label="bộ công thương mwg"><i
-            class="icontgdd-bct"></i></a>
-        <a rel="nofollow noopener" class="bct" href="https://www.thegioididong.com/tos#giai-quyet-khieu-nai"
-          aria-label="bộ công thương chống hàng giả"><i class="icontgdd-hg"></i></a>
-        <a href="https://www.dmca.com/Protection/Status.aspx?ID=5b62e759-2a0c-4d86-b972-af903bfbc89d&amp;refurl=http://www.thegioididong.com/"
-          title="DMCA.com Protection Status" class="dmca-badge"> <img
-            style="opacity:0.6;margin: 0px auto -8px;display: block;"
-            src="./Thegioididong.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/dmca-badge-w100-5x1-11.png"
-            alt="DMCA.com Protection Status"></a>
-      </li>
-    </ul>
-    <ul class="colfoot collast">
-      <li>
-        <a target="_blank" href="https://facebook.com/thegioididongcom" class="linkfb" rel="noopener">
-          <i class="icontgdd-share1"></i>3.4tr
-        </a>
-        <a target="_blank" href="https://www.youtube.com/user/TGDDVideoReviews?sub_confirmation=1" class="linkyt"
-          rel="noopener">
-          <i class="icontgdd-share3"></i>710k
-        </a>
-        <div class="group">
-          <label>Website cùng tập đoàn:</label>
-          <a href="https://www.maiamtgdd.vn/" target="_blank" rel="noopener" class="ma" aria-label="www.maiamtgdd.vn"><i
-              class="iconlogo-ma"></i></a>
-          <a href="https://www.dienmayxanh.com/" target="_blank" rel="noopener" class="dm"
-            aria-label="www.dienmayxanh.com"><i class="iconlogo-dmx"></i></a>
-          <a href="https://www.bachhoaxanh.com/" target="_blank" rel="noopener" class="bhx"
-            aria-label="www.bachhoaxanh.com"><i class="iconlogo-bhx"></i></a>
+  <!-- top footer area start -->
+  <div class="top-footer-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-4">
+          <div class="single-snap-footer">
+            <div class="snap-footer-title">
+              <h4>Company info</h4>
+            </div>
+            <div class="cakewalk-footer-content">
+              <p class="footer-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                wisi enim adm.</p>
+              <a href="#" class="read-more">Read more</a>
+            </div>
+          </div>
         </div>
-      </li>
-    </ul>
+        <div class="col-md-3 col-sm-4">
+          <div class="single-snap-footer">
+            <div class="snap-footer-title">
+              <h4>Information</h4>
+            </div>
+            <div class="cakewalk-footer-content">
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="single-snap-footer">
+            <div class="snap-footer-title">
+              <h4>Fashion Tags</h4>
+            </div>
+            <div class="cakewalk-footer-content">
+              <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">My Cart</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Checkout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 hidden-sm">
+          <div class="single-snap-footer">
+            <div class="snap-footer-title">
+              <h4>Fashion Tags</h4>
+            </div>
+            <div class="cakewalk-footer-content">
+              <ul>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Advanced Search</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 hidden-sm">
+          <div class="single-snap-footer">
+            <div class="snap-footer-title">
+              <h4>Follow Us</h4>
+            </div>
+            <div class="cakewalk-footer-content social-footer">
+              <ul>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a><span>
+                    Facebook</span></li>
+                <li><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a><span>
+                    Google Plus</span></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a><span>
+                    Twitter</span></li>
+                <li><a href="https://youtube.com/" target="_blank"><i class="fa fa-youtube-play"></i></a><span>
+                    Youtube</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="rowfoot2">
-    <p>© 2019. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH &amp; ĐT TP.HCM cấp ngày
-      02/01/2007. Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 18001060. Email:
-      cskh@thegioididong.com. Chịu trách nhiệm nội dung: Trần Nhật Linh. <a href="https://www.thegioididong.com/tos">Xem
-        chính sách sử dụng web</a></p>
+  <!-- top footer area end -->
+  <!-- info footer start -->
+  <div class="info-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-4">
+          <div class="info-fcontainer">
+            <div class="infof-icon">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="infof-content">
+              <h3>Our Address</h3>
+              <p>Main Street, Banasree, Dhaka</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <div class="info-fcontainer">
+            <div class="infof-icon">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div class="infof-content">
+              <h3>Phone Support</h3>
+              <p>+88 0173 7803547</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <div class="info-fcontainer">
+            <div class="infof-icon">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <div class="infof-content">
+              <h3>Email Support</h3>
+              <p>admin@bootexperts.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 hidden-sm">
+          <div class="info-fcontainer">
+            <div class="infof-icon">
+              <i class="fa fa-clock-o"></i>
+            </div>
+            <div class="infof-content">
+              <h3>Openning Hour</h3>
+              <p>Sat - Thu : 9:00 am - 22:00 pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <!-- info footer end -->
+  <!-- banner footer area start -->
+  <div class="banner-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 col-sm-2 col-xs-3 nopadding">
+          <div class="single-bannerfooter">
+            <a href="#">
+              <img src="img/banner/footer-1.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-3 nopadding">
+          <div class="single-bannerfooter">
+            <a href="#">
+              <img src="img/banner/footer-2.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-3 nopadding">
+          <div class="single-bannerfooter">
+            <a href="#">
+              <img src="img/banner/footer-3.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-3 nopadding">
+          <div class="single-bannerfooter">
+            <a href="#">
+              <img src="img/banner/footer-4.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-2 hidden-xs nopadding">
+          <div class="single-bannerfooter">
+            <a href="#">
+              <img src="img/banner/footer-5.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-2 hidden-xs nopadding">
+          <div class="single-bannerfooter last-single">
+            <a href="#">
+              <img src="img/banner/footer-6.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- banner footer area end -->
+  <!-- footer address area start -->
+  <div class="address-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <address>Copyright © <a href="http://bootexperts.com/">BootExperts.</a> All Rights Reserved
+          </address>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="footer-payment pull-right">
+            <a href="#"><img src="img/payment.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer address area end -->
 </footer>
