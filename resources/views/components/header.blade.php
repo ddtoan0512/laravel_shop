@@ -13,115 +13,22 @@
         <div class="mainmenu">
           <nav>
             <ul>
-              <li class="expand"><a href="index.html">Home</a>
+              <li class="expand"><a href="">Trang chủ</a></li>
+              <li class="expand">
+                <a href="">Sản phẩm</a>
                 <ul class="restrain sub-menu">
-                  <li><a href="index-2.html">Home 2</a></li>
-                  <li><a href="index-3.html">Home 3</a></li>
-                  <li><a href="index-4.html">Home 4</a></li>
-                  <li><a href="index-5.html">Home 5</a></li>
-                  <li><a href="index-6.html">Home 6</a></li>
-                  <li><a href="index-7.html">Home 7</a></li>
-                  <li><a href="index-8.html">Home 8</a></li>
+                  @if(isset($categories))
+                  @foreach ($categories as $category)
+                  <li><a
+                      href="{{ route('get.list.product', [$category->c_slug, $category->id]) }}">{{ $category->c_name }}</a>
+                  </li>
+                  @endforeach
+                  @endif
                 </ul>
               </li>
-              <li class="expand"><a href="shop-grid.html">Man</a>
-                <div class="restrain mega-menu megamenu1">
-                  <span>
-                    <a class="mega-menu-title" href="shop-grid.html"> Dresses </a>
-                    <a href="shop-grid.html">Coctail</a>
-                    <a href="shop-grid.html">Day</a>
-                    <a href="shop-grid.html">Evening </a>
-                    <a href="shop-grid.html">Sports</a>
-                  </span>
-                  <span>
-                    <a class="mega-menu-title" href="shop-grid.html"> Handbags </a>
-                    <a href="shop-grid.html">Blazers</a>
-                    <a href="shop-grid.html">Table</a>
-                    <a href="shop-grid.html">Coats</a>
-                    <a href="shop-grid.html">Kids</a>
-                  </span>
-                  <span>
-                    <a class="mega-menu-title" href="shop-grid.html"> Clothing </a>
-                    <a href="shop-grid.html">T-Shirt</a>
-                    <a href="shop-grid.html">Coats</a>
-                    <a href="shop-grid.html">Jackets</a>
-                    <a href="shop-grid.html">Jeans</a>
-                  </span>
-                  <span class="block-last">
-                    <img src="img/block_menu.jpg" alt="" />
-                  </span>
-                </div>
-              </li>
-              <li class="expand"><a href="shop-list.html">Women</a>
-                <div class="restrain mega-menu megamenu2">
-                  <span>
-                    <a class="mega-menu-title" href="shop-grid.html">Rings</a>
-                    <a href="shop-grid.html">Coats & Jackets</a>
-                    <a href="shop-grid.html">Blazers</a>
-                    <a href="shop-grid.html">Jackets</a>
-                    <a href="shop-grid.html">Rincoats</a>
-                  </span>
-                  <span>
-                    <a class="mega-menu-title" href="shop-grid.html">Dresses</a>
-                    <a href="shop-grid.html">Ankle Boots</a>
-                    <a href="shop-grid.html">Footwear</a>
-                    <a href="shop-grid.html">Clog Sandals</a>
-                    <a href="shop-grid.html">Combat Boots</a>
-                  </span>
-                  <span>
-                    <a class="mega-menu-title" href="shop-grid.html">Accessories</a>
-                    <a href="shop-grid.html">Bootees bags</a>
-                    <a href="shop-grid.html">Blazers</a>
-                    <a href="shop-grid.html">Jackets</a>
-                    <a href="shop-grid.html">Shoes</a>
-                  </span>
-                  <span class="block-last">
-                    <a class="mega-menu-title" href="shop-grid.html">Top</a>
-                    <a href="shop-grid.html">Briefs</a>
-                    <a href="shop-grid.html">Camis</a>
-                    <a href="shop-grid.html">Nigntwears</a>
-                    <a href="shop-grid.html">Shapewears</a>
-                  </span>
-                </div>
-              </li>
-              <li class="expand"><a href="shop-grid.html">Shop</a>
-                <div class="restrain mega-menu megamenu4">
-                  <span>
-                    <a class="mega-menu-title" href="shop-list.html">Shop Pages</a>
-                    <a href="shop-list.html">List View </a>
-                    <a href="shop-grid.html">Grid View</a>
-                    <a href="login.html">My Account</a>
-                    <a href="wishlist.html">Wishlist</a>
-                    <a href="cart.html">Cart </a>
-                    <a href="checkout.html">Checkout </a>
-                  </span>
-                  <span class="block-last">
-                    <a class="mega-menu-title" href="product-details.html">Product Types</a>
-                    <a href="product-details.html">Simple Product</a>
-                    <a href="product-details.html">Variables Product</a>
-                    <a href="product-details.html">Grouped Product</a>
-                    <a href="product-details.html">Downloadable</a>
-                    <a href="product-details.html">Virtual Product</a>
-                    <a href="product-details.html">External Product</a>
-                  </span>
-                </div>
-              </li>
-              <li class="expand"><a href="#">Pages</a>
-                <ul class="restrain sub-menu">
-                  <li><a href="about-us.html">About Us</a></li>
-                  <li><a href="contact-us.html">Contact Us</a></li>
-                  <li><a href="checkout.html">Checkout</a></li>
-                  <li><a href="login.html">Login</a></li>
-                  <li><a href="product-details.html">Product Details</a></li>
-                  <li><a href="shop-grid.html">Shop Grid</a></li>
-                  <li><a href="shop-list.html">Shop List</a></li>
-                  <li><a href="cart.html">Shopping cart</a></li>
-                  <li><a href="wishlist.html">Wishlist</a></li>
-                  <li><a href="404.html">404 Error</a></li>
-                </ul>
-              </li>
-              <li class="expand"><a href="about-us.html">About</a></li>
-              <li class="expand"><a href="contact-us.html">Contact</a></li>
+              <li class="expand"><a href="">Tin tức</a></li>
+              <li class="expand"><a href="">Giới thiệu</a></li>
+              <li class="expand"><a href="">Liên hệ</a></li>
             </ul>
           </nav>
         </div>
@@ -259,7 +166,7 @@
       <div class="col-md-3 col-sm-12 nopadding-left">
         <div class="top-detail">
           <!-- language division start -->
-          <div class="disflow">
+          {{-- <div class="disflow">
             <div class="expand lang-all disflow">
               <a href="#"><img src="img/country/en.gif" alt="">English</a>
               <ul class="restrain language">
@@ -277,7 +184,7 @@
                 <li><a href="#">£ GBP</a></li>
               </ul>
             </div>
-          </div>
+          </div> --}}
           <!-- language division end -->
           <!-- addcart top start -->
           <div class="disflow">
@@ -346,12 +253,10 @@
             <div class="expand dropps-menu">
               <a href="#"><i class="fa fa-align-right"></i></a>
               <ul class="restrain language">
-                <li><a href="login.html">My Account</a></li>
-                <li><a href="wishlist.html">My Wishlist</a></li>
-                <li><a href="cart.html">My Cart</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
-                <li><a href="#">Testimonial</a></li>
-                <li><a href="login.html">Log In</a></li>
+                <li><a href="login.html">Quản lý</a></li>
+                <li><a href="wishlist.html">Sản phẩm yêu thích</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="checkout.html">Thoát</a></li>
               </ul>
             </div>
           </div>
