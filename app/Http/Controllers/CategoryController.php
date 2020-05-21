@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -17,9 +18,12 @@ class CategoryController extends Controller
                 'pro_category_id' => $id,
                 'pro_active' => Product::STATUS_PUBLIC
             ])->orderBy('id', 'DESC')->paginate(10);
+
+            $cateProduct = Category::find($id);
         
             $viewData = [
-                'products' => $products
+                'products' => $products,
+                'cateProduct' => $cateProduct
             ];
             
             return view('product.index', $viewData);

@@ -742,7 +742,8 @@ span.amount {
 	transition: all 0.3s ease 0s;
 	width: 35px;
 }
-.quickviewbtn{display: inline-block;}
+.quickviewbtn {display: inline-block;}
+
 .action-buttons a:hover i,.add-to-cart a:hover{
 	background: #3f3f3f;
 	color: #fff;
@@ -774,7 +775,10 @@ span.amount {
     line-height: 22px;
 }
 h2.product-name {
-	margin: 0 0 5px;
+    margin: 0 0 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 h2.product-name a{
 	font-size: 12px;
@@ -790,7 +794,7 @@ span.old-price{
 	text-decoration: line-through;
 }
 span.sale-text{
-	    background: #fff none repeat scroll 0 0;
+    background: #fff none repeat scroll 0 0;
     color: #3f3f3f;
     font-family: Roboto;
     font-size: 12px;
