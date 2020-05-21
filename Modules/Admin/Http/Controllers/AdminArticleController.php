@@ -18,7 +18,9 @@ class AdminArticleController extends Controller
     {
         $articles = Article::whereRaw(1);
 
-        if ($request->name) $articles->where('a_name', 'like', '%' . $request->name . '%');
+        if ($request->name) {
+            $articles->where('a_name', 'like', '%' . $request->name . '%');
+        }
 
         $articles = $articles->paginate(10);
 
@@ -94,15 +96,26 @@ class AdminArticleController extends Controller
 
     public function insertOrUpdate($requestArticle, $id = '')
     {
+        // dd($requestArticle->all());
         $article = new Article();
 
-        if ($id) $article = Article::find($id);
+        if ($id) {
+            $article = Article::find($id);
+        }
         $article->a_name = $requestArticle->a_name;
         $article->a_slug = str_slug($requestArticle->a_name);
         $article->a_description = $requestArticle->a_description;
         $article->a_content = $requestArticle->a_content;
         $article->a_title_seo = $requestArticle->a_title_seo ? $requestArticle->a_title_seo : $requestArticle->a_name;
         $article->a_description_seo = $requestArticle->a_description_seo ? $requestArticle->a_description_seo : $requestArticle->a_description;
+        
+        if ($requestArticle->hasFile('avatar')) {
+            $file = upload_image('avatar');
+            
+            if (isset($file['name'])) {
+                $article->a_avatar = $file['name'];
+            }
+        }
 
         $article->save();
     }

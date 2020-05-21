@@ -1,18 +1,21 @@
 @extends('admin::layouts.master')
 @section('content')
 <div class="container-fluid">
-  <h1 class="pt-3">Quản lý bài viết <a href="{{ route('admin.get.create.article') }}" class="float-right"><i class="fas fa-plus-circle"></i></a></h1>
+  <h1 class="pt-3">Quản lý bài viết <a href="{{ route('admin.get.create.article') }}" class="float-right"><i
+        class="fas fa-plus-circle"></i></a></h1>
   <div class="table-responsive">
     <form class="form-inline">
       <div class="form-group mx-sm-3 mb-2">
-        <input type="text" class="form-control" name="name" placeholder="Tên bài viết..." value="{{ Request::get('name')}}">
+        <input type="text" class="form-control" name="name" placeholder="Tên bài viết..."
+          value="{{ Request::get('name')}}">
       </div>
       <div class="form-group mx-sm-3 mb-2">
         <select name="cate" class="form-control">
           <option value="">Danh mục</option>
           @if(isset($categories))
           @foreach ($categories as $category)
-          <option value="{{$category->id}}" {{ \Request::get('cate') == $category->id ? 'selected' : ''}}>{{$category->c_name}}</option>
+          <option value="{{$category->id}}" {{ \Request::get('cate') == $category->id ? 'selected' : ''}}>
+            {{$category->c_name}}</option>
           @endforeach
           @endif
         </select>
@@ -23,8 +26,9 @@
       <thead>
         <tr>
           <th>#</th>
-          <th>Tên bài viết</th>
-          <th>Mô tả</th>
+          <th style="width: 20%;">Tên bài viết</th>
+          <th style="width: 100px;">Hình ảnh</th>
+          <th style="width: 300px;">Mô tả</th>
           <th>Trạng thái</th>
           <th>Ngày tạo</th>
           <th>Thao tác</th>
@@ -37,14 +41,21 @@
           <td>{{$article->id}}</td>
           <td>{{$article->a_name}}</ul>
           </td>
+          <td>
+            <img src="{{ pare_url_file($article->a_avatar) }}" alt="" class="img img-responsive"
+              style="width: 80px; height: 80px;">
+          </td>
           <td>{{ $article->a_description }}</td>
           <td>
-            <a href="{{ route('admin.get.action.article', ['active', $article->id])}}" class="badge {{$article->getStatus($article->a_active)['class'] }}">{{$article->getStatus($article->a_active)['name'] }}</a>
+            <a href="{{ route('admin.get.action.article', ['active', $article->id])}}"
+              class="badge {{$article->getStatus($article->a_active)['class'] }}">{{$article->getStatus($article->a_active)['name'] }}</a>
           </td>
           <td>{{ $article->created_at }}</td>
           <td>
-            <a style="padding: 5px 10px" href="{{ route('admin.get.edit.article', $article->id) }}"><i class="far fa-edit fa-2x"></i>Cập nhật</a>
-            <a style="padding: 5px 10px" href="{{ route('admin.get.action.article', ['delete', $article->id]) }}"><i class="far fa-trash-alt fa-2x mr-1"></i>Xoá</a>
+            <a style="padding: 5px 10px" href="{{ route('admin.get.edit.article', $article->id) }}"><i
+                class="far fa-edit fa-2x"></i>Cập nhật</a>
+            <a style="padding: 5px 10px" href="{{ route('admin.get.action.article', ['delete', $article->id]) }}"><i
+                class="far fa-trash-alt fa-2x mr-1"></i>Xoá</a>
           </td>
         </tr>
         @endforeach
