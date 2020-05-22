@@ -4,7 +4,7 @@
       <!-- logo start -->
       <div class="col-md-3 col-sm-12 text-center nopadding-right">
         <div class="top-logo">
-          <a href="index.html"><img src="img/logo.gif" alt="" /></a>
+          <a href="index.html"><img src="{{ asset('img/logo.gif') }}" alt="" /></a>
         </div>
       </div>
       <!-- logo end -->
@@ -198,11 +198,11 @@
                   <ul class="cart-list">
                     <li>
                       <a class="sm-cart-product" href="product-details.html">
-                        <img src="img/products/sm-products/cart1.jpg" alt="">
+                        <img src="{{ asset('img/products/sm-products/cart1.jpg')}}" alt="">
                       </a>
                       <div class="small-cart-detail">
                         <a class="remove" href="#"><i class="fa fa-times-circle"></i></a>
-                        <a href="#" class="edit-btn"><img src="img/btn_edit.gif" alt="Edit Button" /></a>
+                        <a href="#" class="edit-btn"><img src="{{ asset('img/btn_edit.gif') }}" alt="Edit Button" /></a>
                         <a class="small-cart-name" href="product-details.html">Voluptas
                           nulla</a>
                         <span class="quantitys"><strong>1</strong>x<span>$75.00</span></span>
@@ -210,11 +210,11 @@
                     </li>
                     <li>
                       <a class="sm-cart-product" href="product-details.html">
-                        <img src="img/products/sm-products/cart2.jpg" alt="">
+                        <img src="{{ asset('img/products/sm-products/cart2.jpg') }}" alt="">
                       </a>
                       <div class="small-cart-detail">
                         <a class="remove" href="#"><i class="fa fa-times-circle"></i></a>
-                        <a href="#" class="edit-btn"><img src="img/btn_edit.gif" alt="Edit Button" /></a>
+                        <a href="#" class="edit-btn"><img src="{{ asset('img/btn_edit.gif') }}" alt="Edit Button" /></a>
                         <a class="small-cart-name" href="product-details.html">Donec ac
                           tempus</a>
                         <span class="quantitys"><strong>1</strong>x<span>$75.00</span></span>
