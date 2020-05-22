@@ -93,13 +93,15 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link {{ \Request::route()->getname() == 'admin.get.list.transaction' ? 'active' : ''}}"
+                href="{{ route('admin.get.list.transaction') }}">
                 <span data-feather="bar-chart-2"></span>
                 Đơn hàng
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li class="nav-item ">
+              <a class="nav-link {{ \Request::route()->getname() == 'admin.get.list.user' ? 'active' : ''}}"
+                href="{{ route('admin.get.list.user') }}">
                 <span data-feather="layers"></span>
                 Thành viên
               </a>

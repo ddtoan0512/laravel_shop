@@ -40,4 +40,14 @@ Route::prefix('admin')->group(function () {
         Route::post('/update/{id}', 'AdminArticleController@update');
         Route::get('/{action}/{id}', 'AdminArticleController@action')->name('admin.get.action.article');
     });
+
+    // Quan ly don hang
+    Route::group(['prefix' => 'transaction'], function () {
+        Route::get('/', 'AdminTransactionController@index')->name('admin.get.list.transaction');
+    });
+
+    // Quan ly thanh vien
+    Route::group(['prefix' => 'user'], function () {
+        Route::get('/', 'AdminUserController@index')->name('admin.get.list.user');
+    });
 });
