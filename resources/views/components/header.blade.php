@@ -257,7 +257,7 @@
                 <li><a href="login.html">Quản lý</a></li>
                 <li><a href="wishlist.html">Sản phẩm yêu thích</a></li>
                 <li><a href="cart.html">Giỏ hàng</a></li>
-                <li><a href="checkout.html">Thoát</a></li>
+                <li><a href="{{ route('get.logout.user') }}">Đăng xuất</a></li>
                 @else
                 <li><a href="{{ route('get.register') }}">Đăng ký</a></li>
                 <li><a href="{{ route('get.login') }}">Đăng nhập</a></li>
