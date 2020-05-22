@@ -8,149 +8,148 @@
 <html class="no-js" lang="">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Lavoro | Home 1</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Lavoro | Home 1</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Favicon
+  <!-- Favicon
 		============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 
-    <!-- Fonts
+  <!-- Fonts
 		============================================ -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet'
-        type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
 
-    <!-- CSS  -->
+  <!-- CSS  -->
 
-    <!-- Bootstrap CSS
+  <!-- Bootstrap CSS
 		============================================ -->
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 
-    <!-- owl.carousel CSS
+  <!-- owl.carousel CSS
 		============================================ -->
-    <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}">
 
-    <!-- owl.theme CSS
+  <!-- owl.theme CSS
 		============================================ -->
-    <link rel="stylesheet" href="{{ asset('css/owl.theme.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/owl.theme.css') }}">
 
-    <!-- owl.transitions CSS
+  <!-- owl.transitions CSS
 		============================================ -->
-    <link rel="stylesheet" href="{{ asset('css/owl.transitions.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/owl.transitions.css') }}">
 
-    <!-- font-awesome.min CSS
+  <!-- font-awesome.min CSS
 		============================================ -->
-    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
 
-    <!-- font-icon CSS
+  <!-- font-icon CSS
 		============================================ -->
-    <link rel="stylesheet" href="{{ asset('fonts/font-icon.css') }}">
+  <link rel="stylesheet" href="{{ asset('fonts/font-icon.css') }}">
 
-    <!-- jquery-ui CSS
+  <!-- jquery-ui CSS
 		============================================ -->
-    <link rel="stylesheet" href="{{ asset('css/jquery-ui.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/jquery-ui.css') }}">
 
-    <!-- mobile menu CSS
+  <!-- mobile menu CSS
 		============================================ -->
-    <link rel="stylesheet" href="{{ asset('css/meanmenu.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/meanmenu.min.css') }}">
 
-    <!-- nivo slider CSS
+  <!-- nivo slider CSS
 		============================================ -->
-    <link rel="stylesheet" href="{{ asset('custom-slider/css/nivo-slider.css') }}" type="text/css" />
-    <link rel="stylesheet" href="{{ asset('custom-slider/css/preview.css') }}" type="text/css" media="screen" />
+  <link rel="stylesheet" href="{{ asset('custom-slider/css/nivo-slider.css') }}" type="text/css" />
+  <link rel="stylesheet" href="{{ asset('custom-slider/css/preview.css') }}" type="text/css" media="screen" />
 
-    <!-- animate CSS
+  <!-- animate CSS
 		============================================ -->
-    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
 
-    <!-- normalize CSS
+  <!-- normalize CSS
 		============================================ -->
-    <link rel="stylesheet" href="{{ asset('css/normalize.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/normalize.css') }}">
 
-    <!-- main CSS
+  <!-- main CSS
 		============================================ -->
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
-    <!-- style CSS
+  <!-- style CSS
 		============================================ -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-    <!-- responsive CSS
+  <!-- responsive CSS
 		============================================ -->
-    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
-    <script src="{{ asset('js/vendor/modernizr-2.8.3.min.js') }}"></script>
+  <script src="{{ asset('js/vendor/modernizr-2.8.3.min.js') }}"></script>
 </head>
 
 <body class="home-one">
-    <!--[if lt IE 8]>
+  <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <!-- header area start -->
-    @include('components.header')
-    <!-- header area end -->
+  <!-- Add your site or application content here -->
+  <!-- header area start -->
+  @include('components.header')
+  <!-- header area end -->
 
-    @yield('content')
-    <!-- FOOTER START -->
-    @include('components.header')
-    <!-- FOOTER END -->
+  @yield('content')
+  <!-- FOOTER START -->
+  @include('components.footer')
+  <!-- FOOTER END -->
 
-    <!-- JS -->
+  <!-- JS -->
 
-    <!-- jquery-1.11.3.min js
+  <!-- jquery-1.11.3.min js
 		============================================ -->
-    <script src="{{ asset('js/vendor/jquery-1.11.3.min.js') }}"></script>
+  <script src="{{ asset('js/vendor/jquery-1.11.3.min.js') }}"></script>
 
-    <!-- bootstrap js
+  <!-- bootstrap js
 		============================================ -->
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 
-    <!-- Nivo slider js
+  <!-- Nivo slider js
 		============================================ -->
-    <script src="{{ asset('custom-slider/js/jquery.nivo.slider.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('custom-slider/home.js') }}" type="text/javascript"></script>
+  <script src="{{ asset('custom-slider/js/jquery.nivo.slider.js') }}" type="text/javascript"></script>
+  <script src="{{ asset('custom-slider/home.js') }}" type="text/javascript"></script>
 
-    <!-- owl.carousel.min js
+  <!-- owl.carousel.min js
 		============================================ -->
-    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+  <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 
-    <!-- jquery scrollUp js 
+  <!-- jquery scrollUp js 
 		============================================ -->
-    <script src="{{ asset('js/jquery.scrollUp.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.scrollUp.min.js') }}"></script>
 
-    <!-- price-slider js
+  <!-- price-slider js
 		============================================ -->
-    <script src="{{ asset('js/price-slider.js') }}"></script>
+  <script src="{{ asset('js/price-slider.js') }}"></script>
 
-    <!-- elevateZoom js 
+  <!-- elevateZoom js 
 		============================================ -->
-    <script src="{{ asset('js/jquery.elevateZoom-3.0.8.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.elevateZoom-3.0.8.min.js') }}"></script>
 
-    <!-- jquery.bxslider.min.js
+  <!-- jquery.bxslider.min.js
 		============================================ -->
-    <script src="{{ asset('js/jquery.bxslider.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.bxslider.min.js') }}"></script>
 
-    <!-- mobile menu js
+  <!-- mobile menu js
 		============================================ -->
-    <script src="{{ asset('js/jquery.meanmenu.js') }}"></script>
+  <script src="{{ asset('js/jquery.meanmenu.js') }}"></script>
 
-    <!-- wow js
+  <!-- wow js
 		============================================ -->
-    <script src="{{ asset('js/wow.js') }}"></script>
+  <script src="{{ asset('js/wow.js') }}"></script>
 
-    <!-- plugins js
+  <!-- plugins js
 		============================================ -->
-    <script src="{{ asset('js/plugins.js') }}"></script>
+  <script src="{{ asset('js/plugins.js') }}"></script>
 
-    <!-- main js
+  <!-- main js
 		============================================ -->
-    <script src="{{ asset('js/main.js')}}"></script>
+  <script src="{{ asset('js/main.js')}}"></script>
 </body>
 
 </html>

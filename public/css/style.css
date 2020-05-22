@@ -314,13 +314,16 @@ a.meanmenu-reveal{
 }
 ul.restrain.language li {
     padding: 10px 0;
+    text-align: left;
+    
 }
 ul.restrain.language li a{color: #fff;}
 ul.restrain.language {
 	width: 150px;
     padding: 10px;
     background: #3f3f3f;
-	top: 100%;
+    top: 100%;
+    
 }
 .top-detail {
 	font-family: Montserrat;
