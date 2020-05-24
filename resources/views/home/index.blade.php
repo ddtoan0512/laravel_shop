@@ -12,20 +12,21 @@
 <div class="our-product-area new-product">
   <div class="container">
     <div class="area-title">
-      <h2>New products</h2>
+      <h2>Sản phẩm nổi bật</h2>
     </div>
     <!-- our-product area start -->
     <div class="row">
       <div class="col-md-12">
         <div class="row">
           <div class="features-curosel">
+            @foreach ($productHot as $proHot)
             <!-- single-product start -->
             <div class="col-lg-12 col-md-12">
               <div class="single-product first-sale">
                 <div class="product-img">
                   <a href="#">
-                    <img class="primary-image" src="img/products/product-1.jpg" alt="" />
-                    <img class="secondary-image" src="img/products/product-2.jpg" alt="" />
+                    <img class="primary-image" src="{{ asset(pare_url_file($proHot->pro_avatar)) }}" alt="" />
+                    <img class="secondary-image" src="{{ asset(pare_url_file($proHot->pro_avatar)) }}" alt="" />
                   </a>
                   <div class="action-zoom">
                     <div class="add-to-cart">
@@ -39,7 +40,8 @@
                           <a href="#" title="Add to Wishlist"><i class="fa fa-heart"></i></a>
                         </div>
                         <div class="compare-button">
-                          <a href="#" title="Add to Cart"><i class="icon-bag"></i></a>
+                          <a href="{{ route('add.shopping.cart', $proHot->id) }}" title="Add to Cart"><i
+                              class="icon-bag"></i></a>
                         </div>
                       </div>
                       <div class="quickviewbtn">
@@ -48,16 +50,17 @@
                     </div>
                   </div>
                   <div class="price-box">
-                    <span class="new-price">$200.00</span>
+                    <span class="new-price">{{ number_format($proHot->pro_price,0,',','.') }}</span>
                   </div>
                 </div>
                 <div class="product-content">
-                  <h2 class="product-name"><a href="#">Donec ac tempus</a></h2>
-                  <p>Nunc facilisis sagittis ullamcorper...</p>
+                  <h2 class="product-name"><a href="#">{{ $proHot->pro_name }}</a></h2>
+                  <p>{{ $proHot->pro_description }}</p>
                 </div>
               </div>
             </div>
             <!-- single-product end -->
+            @endforeach
           </div>
         </div>
       </div>

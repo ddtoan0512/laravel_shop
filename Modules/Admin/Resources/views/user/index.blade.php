@@ -6,25 +6,30 @@
     <thead>
       <tr>
         <th>#</th>
-        <th>Tên danh mục</th>
-        <th>Title Seo</th>
-        <th>Trạng thái</th>
+        <th>Tên hiển thị</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Hình ảnh</th>
         <th>Thao tác</th>
       </tr>
     </thead>
     <tbody>
-      @if (isset($categories))
-      @foreach ($categories as $category)
+      @if (isset($users))
+      @foreach ($users as $user)
       <tr>
-        <td>{{$category->id}}</td>
-        <td>{{$category->c_name}}</td>
-        <td>{{$category->c_title_seo}}</td>
+        <td>{{$user->id}}</td>
+        <td>{{$user->name}}</td>
+        <td>{{$user->email}}</td>
+        <td>{{$user->phone}}</td>
         <td>
-          <a href="#">{{$category->getStatus($category->c_active)['name']}}</a>
+          <img src="{{ pare_url_file($user->avatar) }}" alt="" class="img img-responsive"
+            style="width: 80px; height: 80px;">
         </td>
         <td>
-          <a href="{{ route('admin.get.edit.category', $category->id) }}">Edit</a>
-          <a href="{{ route('admin.get.action.category', ['delete', $category->id]) }}">Delete</a>
+          <a style="padding: 5px 10px" href="{{ route('admin.get.edit.product', $user->id) }}"><i
+              class="far fa-edit fa-2x"></i>Cập nhật</a>
+          <a style="padding: 5px 10px" href="{{ route('admin.get.action.product', ['delete', $user->id]) }}"><i
+              class="far fa-trash-alt fa-2x mr-1"></i>Xoá</a>
         </td>
       </tr>
       @endforeach
