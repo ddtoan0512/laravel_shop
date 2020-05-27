@@ -28,7 +28,7 @@
               </li>
               <li class="expand"><a href="">Tin tức</a></li>
               <li class="expand"><a href="">Giới thiệu</a></li>
-              <li class="expand"><a href="">Liên hệ</a></li>
+              <li class="expand"><a href="{{ route('get.contact') }}">Liên hệ</a></li>
             </ul>
           </nav>
         </div>

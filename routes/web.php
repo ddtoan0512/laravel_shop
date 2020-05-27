@@ -32,3 +32,6 @@ Route::prefix('shopping')->group(function () {
     Route::get('/add/{id}', 'ShoppingCartController@addProduct')->name('add.shopping.cart');
     Route::get('/danh-sach', 'ShoppingCartController@getListShoppingCart')->name('get.list.shopping.cart');
 });
+
+Route::get('lien-he', 'ContactController@getViewContact')->name('get.contact');
+Route::post('lien-he', 'ContactController@saveContact');
