@@ -344,27 +344,28 @@
             </div>
             <div class="contact-form">
               <span class="legend">Thông tin liên hệ </span>
-              <form action="#" method="post">
+              <form action="" method="post">
+                @csrf
                 <div class="form-top">
                   <div class="form-group col-sm-10">
                     <label>Họ và tên<sup>*</sup></label>
-                    <input type="text" name="name" class="form-control">
+                    <input type="text" name="c_name" class="form-control" required>
                   </div>
                   <div class="form-group col-sm-6 col-md-6 col-lg-5">
                     <label>Email <sup>*</sup></label>
-                    <input type="email" name="email" class="form-control">
+                    <input type="email" name="c_email" class="form-control" required>
                   </div>
                   <div class="form-group col-sm-6 col-md-6 col-lg-5">
                     <label>Tiêu đề <sup>*</sup></label>
-                    <input type="text" name="title" class="form-control">
+                    <input type="text" name="c_title" class="form-control" required>
                   </div>
                   <div class="form-group col-sm-12 col-md-12 col-lg-10">
                     <label>Nội dung <sup>*</sup></label>
-                    <textarea class="yourmessage" name="content"></textarea>
+                    <textarea class="yourmessage" name="c_content" required></textarea>
                   </div>
                 </div>
                 <div class="submit-form form-group col-sm-12 submit-review">
-                  <a href="#" class="add-tag-btn pull-left">Xác nhận</a>
+                  <button type="submit" class="btn btn-success pull-left">Xác nhận</button>
                 </div>
               </form>
             </div>
