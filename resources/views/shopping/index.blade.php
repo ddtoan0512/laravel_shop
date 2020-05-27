@@ -37,7 +37,8 @@
         @endforeach
       </tbody>
     </table>
-    <h2 class="pull-right">Tổng tiền {{ Cart::subtotal() }} <a href="" class="btn btn-success">Thanh toán</a> </h2>
+    <h2 class="pull-right">Tổng tiền {{ Cart::subtotal() }} <a href="{{ route('get.form.pay') }}"
+        class="btn btn-success">Thanh toán</a> </h2>
 
   </div>
 </div>

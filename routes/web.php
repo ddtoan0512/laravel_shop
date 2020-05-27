@@ -33,5 +33,9 @@ Route::prefix('shopping')->group(function () {
     Route::get('/danh-sach', 'ShoppingCartController@getListShoppingCart')->name('get.list.shopping.cart');
 });
 
+Route::group(['prefix' => 'gio-hang', 'middleware' => 'web'], function () {
+    Route::get('/thanh-toan', 'ShoppingCartController@getFormPay')->name('get.form.pay');
+});
+
 Route::get('lien-he', 'ContactController@getViewContact')->name('get.contact');
 Route::post('lien-he', 'ContactController@saveContact');
