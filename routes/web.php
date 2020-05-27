@@ -33,7 +33,7 @@ Route::prefix('shopping')->group(function () {
     Route::get('/danh-sach', 'ShoppingCartController@getListShoppingCart')->name('get.list.shopping.cart');
 });
 
-Route::group(['prefix' => 'gio-hang', 'middleware' => 'web'], function () {
+Route::group(['prefix' => 'gio-hang', 'middleware' => 'CheckLoginUser'], function () {
     Route::get('/thanh-toan', 'ShoppingCartController@getFormPay')->name('get.form.pay');
 });
 

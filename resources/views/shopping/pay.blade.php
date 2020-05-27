@@ -78,30 +78,27 @@
             <div class="panel-heading">Thông tin người nhận</div>
             <div class="panel-body">
               <div class="form-group">
-                <div class="col-md-12"><strong>Address:</strong></div>
+                <div class="col-md-12"><strong>Địa chỉ:</strong></div>
                 <div class="col-md-12">
                   <input type="text" name="address" class="form-control" value="" />
                 </div>
               </div>
               <div class="form-group">
-                <div class="col-md-12"><strong>City:</strong></div>
+                <div class="col-md-12"><strong>Email:</strong></div>
                 <div class="col-md-12">
-                  <input type="text" name="city" class="form-control" value="" />
+                  <input type="text" name="email" class="form-control" value="{{ get_data_user('web', 'email') }}" />
                 </div>
               </div>
               <div class="form-group">
-                <div class="col-md-12"><strong>State:</strong></div>
+                <div class="col-md-12"><strong>Số điện thoại:</strong></div>
+                <div class="col-md-12"><input type="text" name="phone_number" class="form-control"
+                    value="{{ get_data_user('web', 'phone') }}" /></div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-12"><strong>Ghi chú:</strong></div>
                 <div class="col-md-12">
-                  <input type="text" name="state" class="form-control" value="" />
+                  <textarea name="note" cols="30" rows="5" class="form-control"></textarea>
                 </div>
-              </div>
-              <div class="form-group">
-                <div class="col-md-12"><strong>Phone Number:</strong></div>
-                <div class="col-md-12"><input type="text" name="phone_number" class="form-control" value="" /></div>
-              </div>
-              <div class="form-group">
-                <div class="col-md-12"><strong>Email Address:</strong></div>
-                <div class="col-md-12"><input type="text" name="email_address" class="form-control" value="" /></div>
               </div>
               <div class="form-group">
                 <div class="col-md-12">
