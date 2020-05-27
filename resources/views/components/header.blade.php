@@ -13,7 +13,7 @@
         <div class="mainmenu">
           <nav>
             <ul>
-              <li class="expand"><a href="">Trang chủ</a></li>
+              <li class="expand"><a href="/">Trang chủ</a></li>
               <li class="expand">
                 <a href="">Sản phẩm</a>
                 <ul class="restrain sub-menu">
@@ -169,8 +169,9 @@
             <div class="circle-shopping expand">
               <div class="shopping-carts text-right">
                 <div class="cart-toggler">
-                  <a href="#"><i class="icon-bag"></i></a>
-                  <a href="#"><span class="cart-quantity">{{ Cart::count() }}</span></a>
+                  <a href="{{ route('get.list.shopping.cart') }}"><i class="icon-bag"></i></a>
+                  <a href="{{ route('get.list.shopping.cart') }}"><span
+                      class="cart-quantity">{{ Cart::count() }}</span></a>
                 </div>
                 <div class="restrain small-cart-content">
                   <ul class="cart-list">
