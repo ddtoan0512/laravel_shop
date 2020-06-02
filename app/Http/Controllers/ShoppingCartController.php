@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Order;
 use App\Models\Product;
 use App\Models\Transaction;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Cart;
 
@@ -31,7 +32,7 @@ class ShoppingCartController extends FrontendController
             'options' => [
                 'avatar' => $product->pro_avatar,
                 'sale' => $product->pro_sale,
-                'price_old' => $product->price
+                'price_old' => $product->pro_price
             ]
         ]);
 
@@ -69,10 +70,13 @@ class ShoppingCartController extends FrontendController
             'tr_note' => $request->note,
             'tr_address' => $request->address,
             'tr_phone' => $request->phone,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
         ]);
 
         if ($transactionId) {
             $products = \Cart::content();
+            // dd($products);
             foreach ($products as $product) {
                 Order::insert([
                     'or_transaction_id' => $transactionId,
