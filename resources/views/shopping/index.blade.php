@@ -31,7 +31,7 @@
           <td> {{ number_format($product->qty * $product->price,0,',','.') }} đ</td>
           <td>
             <a href=""> <i class="fa fa-pencil"></i> Edit</a>
-            <a href=""> <i class="fa fa-trash-o"></i> Delete</a>
+            <a href="{{route('delete.shopping.cart', $key)}}"> <i class="fa fa-trash-o"></i> Delete</a>
           </td>
         </tr>
         @endforeach

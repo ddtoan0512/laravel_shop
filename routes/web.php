@@ -30,11 +30,13 @@ Route::get('san-pham/{slug}-{id}', 'ProductDetailController@productDetail')->nam
 
 Route::prefix('shopping')->group(function () {
     Route::get('/add/{id}', 'ShoppingCartController@addProduct')->name('add.shopping.cart');
+    Route::get('/delete/{id}', 'ShoppingCartController@deleteProductItem')->name('delete.shopping.cart');
     Route::get('/danh-sach', 'ShoppingCartController@getListShoppingCart')->name('get.list.shopping.cart');
 });
 
 Route::group(['prefix' => 'gio-hang', 'middleware' => 'CheckLoginUser'], function () {
     Route::get('/thanh-toan', 'ShoppingCartController@getFormPay')->name('get.form.pay');
+    Route::post('/thanh-toan', 'ShoppingCartController@saveInfoShoppingCart');
 });
 
 Route::get('lien-he', 'ContactController@getViewContact')->name('get.contact');
