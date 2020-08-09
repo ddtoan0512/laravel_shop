@@ -16,7 +16,8 @@ class ProductDetailController extends Controller
             // dd($product);
 
             $viewData = [
-                'product' => $product
+                'product' => $product,
+                
             ];
 
             return view('product.detail', $viewData);

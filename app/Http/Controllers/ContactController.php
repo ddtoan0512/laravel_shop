@@ -15,10 +15,16 @@ class ContactController extends Controller
 
     public function saveContact(Request $request)
     {
-        $data = $request->except('_token');
+        $data               = $request->except('_token');
         $data['created_at'] = $data['updated_at'] = Carbon::now();
         Contact::insert($data);
+
+        $test = array([
+            "product" => "test",
+            "test" => "test1"
+        ]);
 
         return redirect()->back();
     }
 }
+
